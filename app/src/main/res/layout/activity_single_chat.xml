@@ -73,7 +73,7 @@
     <EditText
         android:id="@+id/editMessage"
         android:layout_width="0dp"
-        android:layout_height="50dp"
+        android:layout_height="wrap_content"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="5dp"
@@ -82,12 +82,15 @@
         style="@style/SecondaryText"
         android:paddingStart="20dp"
         android:paddingEnd="10dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
         android:background="@drawable/bg_edit_message"
+        android:inputType="textMultiLine|textCapSentences"
+        android:imeOptions="actionNone"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@id/btn_send"
         app:layout_constraintStart_toStartOf="parent"
-        android:autofillHints="Message"
-        android:inputType="text" />
+        android:autofillHints="Message"/>
 
     <ImageView
         android:id="@+id/btn_send"

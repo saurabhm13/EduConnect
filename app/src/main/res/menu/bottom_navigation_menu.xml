@@ -10,8 +10,8 @@
         android:title="@string/chat"
         android:icon="@drawable/ic_chat"/>
 
-    <item android:id="@+id/profileFragment"
-        android:icon="@drawable/ic_person"
-        android:title="@string/profile"/>
+    <item android:id="@+id/settingsFragment"
+        android:icon="@drawable/ic_setting"
+        android:title="@string/setting"/>
 
 </menu>
