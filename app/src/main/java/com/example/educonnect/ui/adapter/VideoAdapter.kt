@@ -40,6 +40,7 @@ class VideoAdapter(
 
         holder.binding.videoTitle.text = videoList[position].title
         holder.binding.videoDescription.text = videoList[position].description
+        holder.binding.videoPubDate.text = videoList[position].publishedTime
 
         holder.binding.root.setOnClickListener {
             onItemClick.invoke(videoList[position])

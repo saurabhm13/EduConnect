@@ -16,8 +16,8 @@
         android:label="fragment_chat"
         tools:layout="@layout/fragment_chat" />
     <fragment
-        android:id="@+id/profileFragment"
-        android:name="com.example.educonnect.ui.activity.fragment.ProfileFragment"
+        android:id="@+id/settingsFragment"
+        android:name="com.example.educonnect.ui.activity.fragment.SettingsFragment"
         android:label="fragment_profile"
-        tools:layout="@layout/fragment_profile" />
+        tools:layout="@layout/fragment_settings" />
 </navigation>

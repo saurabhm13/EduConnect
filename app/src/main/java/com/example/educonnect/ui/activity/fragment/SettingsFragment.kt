@@ -9,8 +9,8 @@ import android.view.ViewGroup
 import android.widget.Toast
 import com.bumptech.glide.Glide
 import com.example.educonnect.R
+import com.example.educonnect.databinding.FragmentSettingsBinding
 import com.example.educonnect.util.ThemeManager.getThemePreference
-import com.example.educonnect.databinding.FragmentProfileBinding
 import com.example.educonnect.ui.activity.EditProfileActivity
 import com.example.educonnect.ui.activity.LoginActivity
 import com.example.educonnect.ui.activity.MainActivity
@@ -23,9 +23,9 @@ import com.example.educonnect.util.Constants.Companion.THEME_LIGHT
 import com.example.educonnect.util.NotificationSettings.getNotificationSetting
 import com.example.educonnect.util.NotificationSettings.setNotificationSetting
 
-class ProfileFragment : Fragment() {
+class SettingsFragment : Fragment() {
 
-    lateinit var binding: FragmentProfileBinding
+    lateinit var binding: FragmentSettingsBinding
 
     private lateinit var viewModel: MainViewModel
 
@@ -43,7 +43,7 @@ class ProfileFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        binding = FragmentProfileBinding.inflate(inflater, container, false)
+        binding = FragmentSettingsBinding.inflate(inflater, container, false)
 
         // Fetching User data
         viewModel.getUserData()

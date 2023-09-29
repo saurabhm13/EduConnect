@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    tools:context=".ui.activity.fragment.ProfileFragment">
+    tools:context=".ui.activity.fragment.SettingsFragment">
 
     <Toolbar
         android:id="@+id/toolbar"
@@ -20,7 +20,7 @@
             style="@style/PrimaryText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/profile"
+            android:text="@string/setting"
             android:layout_marginEnd="20dp"
             android:textAlignment="center" />
 

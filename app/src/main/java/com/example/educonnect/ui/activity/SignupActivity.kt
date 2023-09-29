@@ -54,8 +54,9 @@ class SignupActivity : AppCompatActivity() {
             }else if (password != conformPassword) {
                 Toast.makeText(this, "Password don't match", Toast.LENGTH_LONG).show()
                 binding.progressBar.visibility = View.GONE
-            }else if (password!!.count() < 8) {
+            }else if (password!!.count() < 6) {
                 Toast.makeText(this, "Password should be more than 8 digits", Toast.LENGTH_LONG).show()
+                binding.progressBar.visibility = View.GONE
             }else {
 
                 viewModel.registerUser(email!!, password!!, name!!)
